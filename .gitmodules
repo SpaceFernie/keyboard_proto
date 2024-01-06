@@ -1,0 +1,3 @@
+[submodule "lib/libstm32g0"]
+	path = lib/libstm32g0
+	url = git@github.com:SpaceFernie/libstm32g0.git
