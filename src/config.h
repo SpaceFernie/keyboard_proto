@@ -1,10 +1,10 @@
 /******************************************************************************
- * @file    main.c
- * @brief   The main file for the keyboard-proto project.
- * @details The main file for the keyboard-proto project.
- * @author  David Fernie
- * @version 0.1.0
- * @date    2024-01-08
+ * @file    module.h
+ * @brief   A brief description of the module.
+ * @details A more detailed description of the module.
+ * @author  Author
+ * @version 1.0.0
+ * @date    20XX-XX-XX
  * @note
  *
  * @copyright MIT License
@@ -21,17 +21,23 @@
  * REVISION HISTORY
  *
  * Date         Version     Author          Description
- * 20XX-XX-XX   1.0.0       David Fernie    Initial release.
+ * 20XX-XX-XX   1.0.0       Author          Initial release.
  *
  *****************************************************************************/
 
+/** @todo Update name below as well as comment for corresponding endif **/
+#ifndef PROJECT_MODULE_H_
+#define PROJECT_MODULE_H_
+
 /*** INCLUDES ****************************************************************/
-#include <assert.h> /* Required for debug runtime assertions. */
 #include <stdint.h> /* Required for portable types. */
 
-#include "config.h" /* Header file for this module. */
-
 /*** PREPROCESSOR CONSTANTS **************************************************/
+/* clang-format off */
+#define FIRMWARE_VERSION_MAJOR @keyboard-proto_VERSION_MAJOR@
+#define FIRMWARE_VERSION_MINOR @keyboard-proto_VERSION_MINOR@
+#define FIRMWARE_VERSION_PATCH @keyboard-proto_VERSION_PATCH@
+/* clang-format on */
 
 /*** CONFIGURATION CONSTANTS *************************************************/
 
@@ -39,16 +45,15 @@
 
 /*** TYPEDEFS ****************************************************************/
 
-/*** FUNCTION DEFINITIONS ****************************************************/
+/*** PROTOTYPES **************************************************************/
+#ifdef __cplusplus
+extern "C" {
+#endif
 
-/**
- * @brief Main function.
- *
- * @details The keyboard-proto main function. This function does not accept
- *          parameters, nor is it supposed to ever return.
- *
- * @returns Exit code.
- */
-int main(void) {}
+/** @todo: Add function prototypes **/
 
-/*** END OF FILE *************************************************************/
+#ifdef __cplusplus
+}  // extern "C"
+#endif
+
+#endif /* PROJECT_MODULE_H_ */
